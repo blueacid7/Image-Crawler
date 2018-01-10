@@ -17,7 +17,7 @@
       <input type="name" name="inputURL" class="input-text" id="inputURL" placeholder="URL" ng-model="inputUrl"
              required autofocus>
       <br>
-      <button class="btn" id="btnSubmit" type="submit" ng-click="checkURL()">Download Photos!</button>
+      <button class="btn" id="btnSubmit" type="submit" ng-click="checkURL()">Crawl Photos!</button>
     </form>
   </div>
 
@@ -26,9 +26,10 @@
 <div class="col-lg-1"></div>
 <div class="col-lg-10">
   <div ng-repeat="img in images" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumb-img" style="height: 300px; padding: 5px">
-    <img src="{{ img.url }}" class="img-thumbnail" style="width:100%;height: 100%;">
-    <span style="position: absolute; top:25px; right:25px;color:white;font-size: 24px;" data-toggle="tooltip" title="Copy to Clipboard"><i  class="glyphicon glyphicon-link"></i></span>
+    <img src="{{ img.url }}" class="img-thumbnail col-xs-12" style="height: 100%;">
+    <span class="clipBoardIcon" style="position: absolute; top:25px; right:25px;color:white;font-size: 24px;" data-toggle="tooltip" title="Copy to Clipboard"><i  class="glyphicon glyphicon-link"></i></span>
     <div class="info">Copied to Clipboard !</div>
+    <span class="img-description">URL : {{img.url}}</span>
   </div>
 </div>
 

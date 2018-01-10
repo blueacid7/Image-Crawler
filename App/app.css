@@ -101,7 +101,7 @@ img {
 span{
     display: none;
 }
-span:hover{
+.clipBoardIcon:hover{
     cursor: pointer;
 }
 .info{
@@ -114,4 +114,15 @@ span:hover{
     padding: 5px;
     font-size: 15px;
     border-radius: 5px;
+}
+.img-description{
+    color:white;
+    display: none;
+    position: absolute;
+    background: black;
+    bottom: 5px;
+    width: calc(100% - 10px);
+    opacity: 0.7;
+    padding: 10px;
+    overflow: hidden;
 }
